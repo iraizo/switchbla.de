@@ -27,7 +27,7 @@
   "scripts": {
     "run:backend": "node backend/server.js",
     "dev": "cross-env NODE_ENV=development ts-node-dev --ignore-watch .next --ignore-watch node_modules -P tsconfig.server.json --cls  backend/server.ts",
-    "build:tailwind": "postcss src/css/tailwind.css -o public/css/tailwind.css",
+    "build:tailwind": "postcss src/css/tailwindsrc.css -o public/css/tailwind.css",
     "dev:frontend": "yarn run next",
     "test": "next start"
   }
