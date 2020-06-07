@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # tailwindcss
-tailwind*
+public/css/tailwind.css
