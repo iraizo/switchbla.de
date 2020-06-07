@@ -27,10 +27,10 @@ export default class Index extends React.Component<props> {
 
                             <div className="flex flex-row items-center text-3xl font-medium mr-2 ">
 
-                            <a className="mx-2 hover:text-indigo-600 duration-700" href="twitter.com/yvngraizo"><AiOutlineTwitter/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-700" href="github.com/iraizo"><AiFillGithub/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-700" href="mailto:admin@weeb.tech"><AiFillMail/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-700" href="#projects"><AiFillProject/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-5 00" href="twitter.com/yvngraizo"><AiOutlineTwitter/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-500" href="github.com/iraizo"><AiFillGithub/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-500" href="mailto:admin@weeb.tech"><AiFillMail/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-500" href="#projects"><AiFillProject/></a>
 
                             </div>
                     </div>
@@ -49,8 +49,10 @@ export default class Index extends React.Component<props> {
                             <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl">My Projects</p>
                             <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl"><AiOutlineArrowDown/></p>
                         </div>
-                        <div id="projects" className="text-black flex flex-col items-center justify-center">
-                            <Project description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
+                        <div id="projects" className="text-black flex flex-row justify-center">
+                        <Project link="https://jelbrek.icu/" description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
+                            <Project link="https://jelbrek.icu/" description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
+                            <Project link="https://jelbrek.icu/" description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
                         </div>
                     </div>
                 </div>
