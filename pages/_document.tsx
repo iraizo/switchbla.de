@@ -7,7 +7,7 @@ export default class CustomDocument extends Document {
             <html lang='en-US'>
                 <Head>
                     <meta name="theme-color" content="#fa2a43"/>
-                    <meta name="description" content="raizo - Soft and web developer."/>
+                    <meta name="description" content="raizo - soft and web developer."/>
                 </Head>
                 <body>
                     <Main/>
