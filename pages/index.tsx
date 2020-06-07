@@ -2,15 +2,17 @@ import React from "react";
 import {AiOutlineFundProjectionScreen, AiOutlineFund, AiFillGithub, AiFillMail, AiOutlineTwitter, AiFillProject, AiOutlineArrowDown} from "react-icons/ai";
 import Particles from 'react-particles-js';
 import Project from "../components/project";
-interface props {
-    audio: any,
-}
+export default class Index extends React.Component<{}, {year: number}> {
 
-export default class Index extends React.Component<props> {
+    constructor(props) {
+        super(props);
+
+        const d = new Date();
+        this.state = { year: d.getFullYear()};
+      }
 
 
     componentDidMount() {
-
 
     }
 
@@ -46,7 +48,7 @@ export default class Index extends React.Component<props> {
                             </div>
                         </div>
                         <div id="projects-notice" className="my-16 text-white flex flex-col items-center justify-center">
-                            <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl">My Projects</p>
+                            <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl">Projects</p>
                             <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl"><AiOutlineArrowDown/></p>
                         </div>
                         <div id="projects" className="text-black flex flex-row justify-center">
@@ -54,6 +56,9 @@ export default class Index extends React.Component<props> {
                             <Project link="https://jelbrek.icu/" description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
                             <Project link="https://github.com/iraizo/stringfuscator-cpp" description="A string obfuscator made in C++ using AES." header="stringfuscator-cpp"/>
                         </div>
+                        <footer className="flex flex-row justify-center items-center text-center text-white inset-x-0 bottom-0 absolute">
+                            <p>&copy; Copyright {this.state.year}, raizo.</p>
+                        </footer>
                     </div>
                 </div>
             </div>
