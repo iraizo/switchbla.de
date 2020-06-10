@@ -16,7 +16,6 @@
     "net": "^1.0.2",
     "next": "^9.4.4",
     "react": "^16.13.1",
-    "react-audio-spectrum": "^0.1.0",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-particles-js": "^3.2.1",
@@ -30,6 +29,6 @@
     "build:tailwind": "postcss src/css/tailwind.css -o public/css/tailwind.css",
     "dev:frontend": "yarn run next",
     "test": "next start",
-    "build:production": "build:tailwind && next build"
+    "build:production": "yarn run build:tailwind && next build"
   }
 }
