@@ -23,7 +23,7 @@
     "react-particles-js": "^3.2.1",
     "tailwindcss": "^1.4.6",
     "ts-node-dev": "^1.0.0-pre.51",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "run:backend": "node backend/server.js",
