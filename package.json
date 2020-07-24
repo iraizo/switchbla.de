@@ -22,7 +22,7 @@
     "react-icons": "^3.10.0",
     "react-particles-js": "^3.3.0",
     "tailwindcss": "^1.4.6",
-    "ts-node-dev": "^1.0.0-pre.51",
+    "ts-node-dev": "^1.0.0-pre.55",
     "typescript": "^3.9.7"
   },
   "scripts": {
