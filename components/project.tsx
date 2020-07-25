@@ -1,4 +1,5 @@
 import React from "react"
+import Link from 'next/link'
 
 interface ProjectProp {
     header: string,
@@ -18,7 +19,7 @@ export default class Project extends React.Component<ProjectProp> {
                 </div>
                 <div id="button wrapper" className="inset-x-0 bottom-0 absolute flex-flex-row justify-center items-center mb-2">
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full my-2">
-                    <a href={this.props.link}>Visit</a>
+                    <Link passHref={true} href={this.props.link}>Visit</Link>
                 </button>
                 </div>
             </div>

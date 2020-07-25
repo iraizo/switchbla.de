@@ -27,8 +27,8 @@ export default class Index extends React.Component<props> {
 
                             <div className="flex flex-row items-center text-3xl font-medium mr-2 ">
 
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="twitter.com/yvngraizo"><AiOutlineTwitter/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="github.com/iraizo"><AiFillGithub/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-500" href="https://twitter.com/yvngraizo"><AiOutlineTwitter/></a>
+                            <a className="mx-2 hover:text-indigo-600 duration-500" href="https://github.com/iraizo"><AiFillGithub/></a>
                             <a className="mx-2 hover:text-indigo-600 duration-500" href="mailto:admin@weeb.tech"><AiFillMail/></a>
                             <a className="mx-2 hover:text-indigo-600 duration-500" href="#projects"><AiFillProject/></a>
 
