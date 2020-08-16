@@ -1,13 +1,8 @@
 import React from "react";
-import {AiOutlineFundProjectionScreen, AiOutlineFund, AiFillGithub, AiFillMail, AiOutlineTwitter, AiFillProject, AiOutlineArrowDown} from "react-icons/ai";
-import Particles from 'react-particles-js';
-import Project from "../components/project";
-interface props {
-    audio: any,
-}
-
-export default class Index extends React.Component<props> {
-
+import {AiFillGithub, AiOutlineTwitter} from "react-icons/ai";
+import {DiNpm} from "react-icons/di";
+import {FaTelegramPlane, FaSpotify} from "react-icons/fa";
+export default class Index extends React.Component {
 
     componentDidMount() {
 
@@ -17,44 +12,45 @@ export default class Index extends React.Component<props> {
     render() {
         return (    
             <div id="App">
-                <div id="wrapper">
-                <audio id="audio-element"
-                src="./assets/audio.mp3"
-                autoPlay loop
-                />
-                    <div id="navbar" className="select-none text-white flex flex-row items-center justify-between bg-gray-800 py-4 sm:py-2 md:py-4 lg:py-4 xl:py-8">
-                        <p className="ml-4 mr-8 text-2xl">SWITCHBLA.DE</p>
+                <div id={"wrapper"} style={{backgroundColor: "#18191a"}} className={"h-screen w-screen text-gray-600"}>
 
-                            <div className="flex flex-row items-center text-3xl font-medium mr-2 ">
+                    <div id={"main"} className={"flex flex-col content-center items-center justify-center pt-24"}>
+                        <h1 className={"pb-4 text-3xl"}>Hi, I'm Loron Gröbner, also known as raizo.</h1>
 
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="https://twitter.com/yvngraizo"><AiOutlineTwitter/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="https://github.com/iraizo"><AiFillGithub/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="mailto:admin@weeb.tech"><AiFillMail/></a>
-                            <a className="mx-2 hover:text-indigo-600 duration-500" href="#projects"><AiFillProject/></a>
+                        <p>I am a self taught soft & web developer. Powered by VS code, clang and espresso.</p>
+                        <p>I mainly code backend in TypeScript and code software in C++ or Python.</p>
 
-                            </div>
+                        <p className={"pt-4"}>Got any questions? <a className={"hover:text-blue-500 duration-500 text-green-400"} href={"mailto:admin@weeb.tech"}>Contact me.</a></p>
                     </div>
 
-                    <div id="main" className="bg-gray-800 w-full h-full min-h-screen min-w-screen fixed" style={{zIndex: 9999}}>
-                        <Particles style={{position: "absolute"}}/>
-                        <div id="center" className="text-white flex flex-col items-center justify-center">
-                            <div className="flex flex-row">
-                                <h1 className="text-base sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl">Hey, I'm Raizo.</h1>
-                            </div>
-                            <div id="content" className="">
-                                <p className="mx-8 text-base sm:text-lg md:text-3xl lg:text-4xl xl:text-5xl">Web & Software developer.</p>
-                            </div>
-                        </div>
-                        <div id="projects-notice" className="my-16 text-white flex flex-col items-center justify-center">
-                            <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl">My Projects</p>
-                            <p className="text-base sm:text-base md:text-2xl lg:text-3xl xl:text-4xl"><AiOutlineArrowDown/></p>
-                        </div>
-                        <div id="projects" className="text-black flex flex-row justify-center">
-                            <Project link="https://github.com/iraizo/discordGrabber/" description="Steals information from the discord process via signature scanning." header="discordGrabber"/>
-                            <Project link="https://jelbrek.icu/" description="The image uploader designed by jailbreakers, for jailbreakers. Without compression and with the highest quality." header="Jelbrek.icu"/>
-                            <Project link="https://github.com/iraizo/stringfuscator-cpp" description="A string obfuscator made in C++ using AES." header="stringfuscator-cpp"/>
+                    <div id={"work"} className={"flex flex-col content-center items-center justify-center pt-24"}>
+
+                        <h1 className={"text-3xl pb-2"}>Recent work</h1>
+
+                        <div id={"list"} className={"flex flex-col text-center"}>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/chip8emu"}>chip8emu</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/truckersmp.ts"}>truckersmp.ts</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/discordGrabber"}>discordGrabber</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/nvidia-overlay-hijack"}>nvidia overlay hijack</a>
+
                         </div>
                     </div>
+
+                    <br/>
+                    <div id={"work"} className={"flex flex-col content-center items-center justify-center pt-24"}>
+                        <h1 className={"text-3xl"}>Lets be internet BFFs</h1>
+                        <div className={"flex flex-row text-4xl py-2"}>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo"}><AiFillGithub/></a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://t.me/iraizo"}><FaTelegramPlane/></a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://twitter.com/yvngraizo"}><AiOutlineTwitter/></a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"}href={"https://www.npmjs.com/~iraizo"}><DiNpm/></a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"}href={"https://open.spotify.com/user/g3bhir4x3t8no4nx5f907636x"}><FaSpotify/></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div className={"flex flex-col content-center items-center justify-center"}>
+                    <footer style={{bottom: "0", height: "40px", position: "absolute"}} className={"text-gray-600"}><a className={"hover:text-blue-500 duration-500 text-green-400"}href={"mailto:admin@weeb.tech"}>admin@weeb.tech</a> © Loron Gröbner. All rights Reserved.</footer>
                 </div>
             </div>
         )
