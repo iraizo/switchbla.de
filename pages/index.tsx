@@ -20,7 +20,7 @@ export default class Index extends React.Component {
                         <p>I am a self taught soft & web developer. Powered by VS code, clang and espresso.</p>
                         <p>I mainly code backend in TypeScript and code software in C++ or Python.</p>
 
-                        <p className={"pt-4"}>Got any questions? <a className={"hover:text-blue-500 duration-500 text-green-400"} href={"mailto:admin@weeb.tech"}>Contact me.</a></p>
+                        <p className={"pt-4"}>Got any questions? <a target="_blank" className={"hover:text-blue-500 duration-500 text-green-400"} href={"mailto:admin@weeb.tech"}>Contact me.</a></p>
                     </div>
 
                     <div id={"work"} className={"flex flex-col content-center items-center justify-center pt-24"}>
@@ -28,10 +28,10 @@ export default class Index extends React.Component {
                         <h1 className={"text-3xl pb-2"}>Recent work</h1>
 
                         <div id={"list"} className={"flex flex-col text-center"}>
-                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/chip8emu"}>chip8emu</a>
-                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/truckersmp.ts"}>truckersmp.ts</a>
-                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/discordGrabber"}>discordGrabber</a>
-                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} href={"https://github.com/iraizo/nvidia-overlay-hijack"}>nvidia overlay hijack</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/chip8emu"}>chip8emu</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/truckersmp.ts"}>truckersmp.ts</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/discordGrabber"}>discordGrabber</a>
+                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/nvidia-overlay-hijack"}>nvidia overlay hijack</a>
 
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default class Index extends React.Component {
 
                 </div>
                 <div className={"flex flex-col content-center items-center justify-center"}>
-                    <footer style={{bottom: "0", height: "40px", position: "absolute"}} className={"text-gray-600"}><a className={"hover:text-blue-500 duration-500 text-green-400"}href={"mailto:admin@weeb.tech"}>admin@weeb.tech</a> © Loron Gröbner. All rights Reserved.</footer>
+                    <footer style={{bottom: "0", height: "40px", position: "absolute"}} className={"text-gray-600"}><a target="_blank" className={"hover:text-blue-500 duration-500 text-green-400"}href={"mailto:admin@weeb.tech"}>admin@weeb.tech</a> © Loron Gröbner. All rights Reserved.</footer>
                 </div>
             </div>
         )
