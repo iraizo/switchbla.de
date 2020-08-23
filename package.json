@@ -32,5 +32,9 @@
     "dev:frontend": "yarn run next",
     "test": "next start",
     "build": "npm run build:tailwind && next build"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "cssnano": "^4.1.10"
   }
 }
