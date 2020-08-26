@@ -21,7 +21,7 @@
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
     "react-particles-js": "^3.3.0",
-    "tailwindcss": "^1.7.3",
+    "tailwindcss": "^1.7.4",
     "ts-node-dev": "^1.0.0-pre.59",
     "typescript": "^4.0.2"
   },
@@ -30,11 +30,12 @@
     "dev": "cross-env NODE_ENV=development ts-node-dev --ignore-watch .next --ignore-watch node_modules -P tsconfig.server.json --cls  backend/server.ts",
     "build:tailwind": "postcss src/css/tailwind.css -o public/css/tailwind.css",
     "dev:frontend": "yarn run next",
-    "test": "next start",
     "build": "npm run build:tailwind && next build"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
-    "cssnano": "^4.1.10"
+    "@zeit/next-css": "^1.0.1",
+    "cssnano": "^4.1.10",
+    "next-purgecss": "^4.0.0"
   }
 }
