@@ -34,6 +34,6 @@
     "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.8.6",
     "purgecss": "^2.3.0",
-    "tailwindcss": "^1.8.8"
+    "tailwindcss": "^1.8.10"
   }
 }
