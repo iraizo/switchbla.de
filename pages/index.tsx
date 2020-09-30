@@ -28,7 +28,6 @@ export default class Index extends React.Component {
                         <h1 className={"text-3xl pb-2"}>Recent work</h1>
 
                         <div id={"list"} className={"flex flex-col text-center"}>
-                            <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/chip8emu"}>chip8emu</a>
                             <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/truckersmp.ts"}>truckersmp.ts</a>
                             <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/discordGrabber"}>discordGrabber</a>
                             <a className={"px-2 hover:text-blue-500 duration-500 text-green-400"} target="_blank" href={"https://github.com/iraizo/nvidia-overlay-hijack"}>nvidia overlay hijack</a>
