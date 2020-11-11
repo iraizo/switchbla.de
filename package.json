@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/body-parser": "^1.19.0",
-    "@types/express": "^4.17.8",
+    "@types/express": "^4.17.9",
     "@types/react": "^16.9.56",
     "body-parser": "^1.19.0",
     "cross-env": "^7.0.2",
