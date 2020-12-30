@@ -4,11 +4,6 @@ import {DiNpm} from "react-icons/di";
 import {FaTelegramPlane, FaSpotify} from "react-icons/fa";
 export default class Index extends React.Component {
 
-    componentDidMount() {
-
-
-    }
-
     render() {
         return (    
             <div id="App">
