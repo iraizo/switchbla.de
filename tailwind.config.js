@@ -1,13 +1,16 @@
 module.exports = {
-    purge: ['./pages/**/*.tsx'],
-   options: {
-       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-   },
-    theme: {
-        extend: {},
+    prefix: '',
+    purge: {
+      content: [
+        './src/**/*.{html,ts}',
+      ]
     },
-    variants: {},
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+      extend: {},
+    },
+    variants: {
+      extend: {},
+    },
     plugins: [],
 };
-
-console.log(exports);

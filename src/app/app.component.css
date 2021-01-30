@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.bg-img {
+    filter: blur(0.5rem); 
+    transform: scale(1.1);
+    background-image: url("../assets/background.jpg") 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 800px) {
+    #avatar {
+        display: none;
+    }
+}
+
+a {
+    transition: 0.4s;
+    color:  #FDFFFC;
+}
+
+a:hover {
+    color: rgba(147, 197, 253, var(--tw-text-opacity));
+}
+
+h1 {
+    font-size: 150%;
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
